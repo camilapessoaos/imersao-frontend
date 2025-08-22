@@ -70,4 +70,29 @@ body {
     color: #2b6cb0;                   /* Define a cor da bolinha (azul) */
     font-weight: bold;                /* Deixa a bolinha mais grossa/forte */
   }
-  
+  #bnt-print{
+    background-color: #2b6cb0;
+    color:white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 7px;
+  }
+
+   #bnt-print:hover{
+    background-color: #922089;
+  }
+  .button {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  @media print{
+    #bnt-print{
+      display: none;
+      visibility: hidden;
+    }
+  }
